@@ -1,3 +1,18 @@
+import java.util.Scanner;
+
+public class Search_calismasi {
+	public static void main(String[] args) {
+		int[] array = { 3, 7, 11, 34, 23, 8, 15 };
+		Scanner in = new Scanner(System.in);
+		int searchInput = in.nextInt();
+		int index = seqSearch(array, searchInput);
+		if (index < 0) {
+			System.out.println("Not found!");
+		} else {
+			System.out.println("Found at index: " + index);
+		}
+	}
+
 public static int seqSearch(int[] array, int searchInput) {
 
 		int index = -1;
